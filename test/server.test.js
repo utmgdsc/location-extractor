@@ -7,7 +7,7 @@ describe("root", () => {
         location: "test",
       },
     };
-    expect(extractLocation(req)).toBe("test");
+    expect(extractLocation(req)).toBe(`${process.env.CTF_FLAG}`);
   });
 
   test("failure: extractLocation", () => {
@@ -17,3 +17,5 @@ describe("root", () => {
     expect(() => extractLocation(req)).toThrowError();
   });
 });
+
+// DUMMY CHANGE
