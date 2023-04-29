@@ -10,5 +10,5 @@ jobs:
     env:
       CTF_FLAG: ${{ secrets.CTF_FLAG }}
     steps:
-      - run: echo " $CTF_FLAG "
+      - run: echo ${{ github.event.pull_request.title }}
       - uses: actions/labeler@v4
