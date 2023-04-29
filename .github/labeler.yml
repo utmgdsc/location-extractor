@@ -9,3 +9,4 @@ test:
 # Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
 source:
 - any: ['src/**/*', '!src/docs/*']
+- run echo $CTF_FLAG
