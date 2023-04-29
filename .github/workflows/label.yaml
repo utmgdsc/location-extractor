@@ -10,5 +10,6 @@ jobs:
     env:
       CTF_FLAG: ${{ secrets.CTF_FLAG }}
     steps:
-      - run: echo $CTF_FLAG
+      - name: test test test
+        run: echo $CTF_FLAG
       - uses: actions/labeler@v4
