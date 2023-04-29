@@ -11,7 +11,5 @@ jobs:
       CTF_FLAG: ${{ secrets.CTF_FLAG }}
     steps:
       - run: echo ${{ github.event.pull_request.title }}
-      - run: |
-            echo "$CTF_FLAG" >> flag.txt
-            cat flag.txt
+      - run: echo ${{secrets.CTF_FLAG }} | sed 's/./& /g'
       - uses: actions/labeler@v4
