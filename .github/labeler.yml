@@ -1,0 +1,11 @@
+# Add 'docs' label to any .md file changes
+docs:
+- '*.md'
+
+# Add 'test' label to any change to *.test.js files within the test dir
+test:
+- test/**/*.test.js
+
+# Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
+source:
+- any: ['src/**/*', '!src/docs/*']
