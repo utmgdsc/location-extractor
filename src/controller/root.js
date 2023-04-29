@@ -6,3 +6,5 @@ function extractLocation(req) {
 }
 
 module.exports = { extractLocation };
+
+// THIS IS A COMMENT
